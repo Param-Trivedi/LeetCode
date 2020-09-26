@@ -7,7 +7,7 @@ public class LC1470_ShuffleArray {
     /**
      *  TODO:
      *    1. LEETCODE# : 1470
-     *    2. TIMER:
+     *    2. TIMER: 8:00
      */
 
     public static int[] shuffleArray (int [] nums , int n){
