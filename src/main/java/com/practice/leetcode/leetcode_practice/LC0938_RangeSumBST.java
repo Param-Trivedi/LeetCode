@@ -10,7 +10,7 @@ public class LC0938_RangeSumBST {
      *    2. TIMER:
      */
 	
-	public static class TreeNode {
+	private static class TreeNode {
 		      int val;
 		      TreeNode left;
 		      TreeNode right;
