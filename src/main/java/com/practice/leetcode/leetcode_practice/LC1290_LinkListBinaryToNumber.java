@@ -22,7 +22,7 @@ public class LC1290_LinkListBinaryToNumber {
 
     public static int binaryToDecimal(ListNode head){
          int currDec = 1, finalNum = 0, currIndex= 0 ;
-         List<Integer> reversedList = new ArrayList<>();
+         List<Integer> reversedList = new ArrayList<Integer>();
          ListNode dummy = head;
 
          while (dummy != null){

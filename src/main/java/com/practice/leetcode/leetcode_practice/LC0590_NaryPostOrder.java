@@ -27,8 +27,8 @@ public class LC0590_NaryPostOrder {
 	
 	
 	public static List<Integer> postorder(Node root) {
-		LinkedList<Integer> finalList = new LinkedList<>();
-		Stack<Node> nodeStack = new Stack<>();
+		LinkedList<Integer> finalList = new LinkedList<Integer>();
+		Stack<Node> nodeStack = new Stack<Node>();
 		if(root == null)return finalList;
 		
 		nodeStack.push(root);

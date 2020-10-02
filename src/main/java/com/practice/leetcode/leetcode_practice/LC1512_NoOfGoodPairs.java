@@ -23,7 +23,7 @@ public class LC1512_NoOfGoodPairs {
     }
 
     public static int goodPairMap(int [] nums){
-        HashMap<Integer , Integer> numMap = new HashMap<>();
+        HashMap<Integer , Integer> numMap = new HashMap<Integer,Integer>();
         int totalPair = 0;
         for(int i = 0 ; i < nums.length ; i++){
             numMap.put(nums[i], numMap.getOrDefault(nums[i],0) + 1);

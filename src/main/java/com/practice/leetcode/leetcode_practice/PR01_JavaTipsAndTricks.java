@@ -28,7 +28,7 @@ public class PR01_JavaTipsAndTricks {
 		int[] cpyArr2b = Arrays.copyOfRange(arr1 , 0 , arr1.length/2);
 		int[] cpyArr3b = Arrays.copyOfRange(arr1, arr1.length/2 , arr1.length);
 		System.out.print("Print Arr2b and Arr3b : " + Arrays.toString(cpyArr2b) + "\t" + Arrays.toString(cpyArr3b) + "\n");
-		List<Integer> list1 = Arrays.stream(arr1).boxed().collect(Collectors.toList());
+		List<Integer> list1 = Arrays.stream(arr1).boxed().collect(Collectors.toList()); 
 		int[] lstArr1 = list1.stream().mapToInt(Integer::intValue).toArray();
 		System.out.print("Print list1 and listArr1 : " + Arrays.toString(list1.toArray()) + "\t" + Arrays.toString(lstArr1) + "\n");
 		String [] strArr1 = new String[] {"ab", "cd" , "dc"};
@@ -40,7 +40,7 @@ public class PR01_JavaTipsAndTricks {
 
 		////////////////////HASHAMP////////////////////////
 		System.out.print("////////////////////HASHAMP////////////////////////\n");
-		HashMap<Integer , Integer> hashMap1 = new HashMap<>();
+		HashMap<Integer , Integer> hashMap1 = new HashMap<Integer , Integer>();
 		hashMap1.put(1,5);
 		hashMap1.put(2,4);
 		hashMap1.put(3,3);

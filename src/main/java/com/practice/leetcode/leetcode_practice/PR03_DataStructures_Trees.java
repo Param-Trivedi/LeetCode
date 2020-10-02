@@ -34,7 +34,7 @@ public class PR03_DataStructures_Trees {
             root = new node(val); return;
         }
         //node dummy = root;
-        Queue<node> nodeList = new LinkedList<>();
+        Queue<node> nodeList = new LinkedList<node>();
         if(nodeList.isEmpty() == true){
             nodeList.add(root);
         }
@@ -99,7 +99,7 @@ public class PR03_DataStructures_Trees {
     }
 
     void DFS(node head){
-        Stack<node> nodeList = new Stack<>();
+        Stack<node> nodeList = new Stack<node>();
         if(head == null) return;
         nodeList.push(head);
         while (!nodeList.isEmpty()){
@@ -115,7 +115,7 @@ public class PR03_DataStructures_Trees {
     }
 
     void BFS (node head){
-        Queue<node> nodeList = new LinkedList<>();
+        Queue<node> nodeList = new LinkedList<node>();
         if(head == null)return;
         nodeList.add(head);
         while (!nodeList.isEmpty()){

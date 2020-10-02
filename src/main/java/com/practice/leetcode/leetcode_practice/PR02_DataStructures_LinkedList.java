@@ -16,7 +16,7 @@ public class PR02_DataStructures_LinkedList {
 
     node head;
     int length = 0;
-    HashSet<Integer> keySet = new HashSet<>();
+    HashSet<Integer> keySet = new HashSet<Integer>();
 
         public static class node {
             int data;

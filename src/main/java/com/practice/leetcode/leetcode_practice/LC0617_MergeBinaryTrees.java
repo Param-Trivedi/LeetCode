@@ -31,8 +31,8 @@ public class LC0617_MergeBinaryTrees {
 	}
 	
 	public static TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
-		Queue<TreeNode> t1Q = new LinkedList<>();
-		Queue<TreeNode> t2Q = new LinkedList<>();
+		Queue<TreeNode> t1Q = new LinkedList();
+		Queue<TreeNode> t2Q = new LinkedList();
 	
 		if(t1 == null)return t2;
 		if(t2 == null)return t1;

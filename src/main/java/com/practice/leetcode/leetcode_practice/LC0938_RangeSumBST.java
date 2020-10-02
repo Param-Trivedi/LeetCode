@@ -25,7 +25,7 @@ public class LC0938_RangeSumBST {
 	}
 	
 	public static int rangeSumBST(TreeNode root, int L, int R) {
-		Queue<TreeNode> node = new LinkedList<>();
+		Queue<TreeNode> node = new LinkedList<TreeNode>();
 		node.add(root);
 		int sum = 0;
 		while(!node.isEmpty()) {
