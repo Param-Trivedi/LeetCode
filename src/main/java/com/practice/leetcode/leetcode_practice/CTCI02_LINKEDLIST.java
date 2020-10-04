@@ -38,6 +38,30 @@ public class CTCI02_LINKEDLIST {
         }
     }
 
+    public static ListNode addition(ListNode l1 , ListNode l2){
+
+        ListNode finalSum = new ListNode(0);
+        ListNode tempfinalSum = finalSum;
+        int carry = 0;
+        while(l1 != null || l2 != null){
+            int num1 = 0, num2 =0, tempSum = 0, finalVal = 0;
+            if(l1 != null)num1 = l1.val;
+            if(l2 != null)num2 = l2.val;
+            tempSum = num1 + num2 + carry;
+            if(tempSum > 10){
+                carry = tempSum/10;
+                finalVal = tempSum%10;
+            }else{
+                finalVal = tempSum;
+            }
+            tempfinalSum.next = new ListNode(finalVal);
+            tempfinalSum = tempfinalSum.next;
+            l1 = l1.next ; l2 = l2.next;
+        }
+
+        return finalSum.next;
+    }
+
     public static void printList(ListNode root){
         System.out.println("");
         while(root != null){
@@ -55,11 +79,16 @@ public class CTCI02_LINKEDLIST {
         printList(root);
         removeDups(root);
         printList(root);    
-        ListNode root1 = root;
-        // while(root1 != null){
-        //     System.out.print("\t" + root1.val);
-        //     root1 = root1.next;
-        // }
+
+        System.out.println("\nAdding two list");
+
+        ListNode l1 = new ListNode(7);l1.next = new ListNode(1); l1.next.next = new ListNode(6);
+        ListNode l2 = new ListNode(5);l2.next = new ListNode(9); l2.next.next = new ListNode(2);
+
+        ListNode finalSum = addition(l1, l2);
+        System.out.println("\n Addition : ");
+        printList(finalSum);
+        //System.out.println("Module " + 12/10);
     }
 
 }

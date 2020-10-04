@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 public class PR01_JavaTipsAndTricks {
 	/**
-	 *  TODO
+	 *  TODO:
 	 *   1. Explore Arrays and its tricks
 	 *   2. Explore Hashmaps and its applications
 	 *   3. Explore String Operations
