@@ -54,12 +54,86 @@ public class CTCI02_LINKEDLIST {
             }else{
                 finalVal = tempSum;
             }
+
             tempfinalSum.next = new ListNode(finalVal);
             tempfinalSum = tempfinalSum.next;
-            l1 = l1.next ; l2 = l2.next;
+
+            if(l1 != null)l1 = l1.next ;
+            if(l2 != null) l2 = l2.next;
         }
 
         return finalSum.next;
+    }
+
+    public static ListNode reverseList(ListNode currList){
+        ListNode prev = null;
+        ListNode curr = currList;
+        ListNode next = currList.next;
+
+        while(curr != null){
+            curr.next = prev;
+            prev = curr;
+            if(next != null){
+                curr = next;
+                next = curr.next;
+            }else{
+                break;
+            }
+        }
+
+        return prev;
+    }
+
+
+    public static Boolean  findIntersection(ListNode l1 , ListNode l2){
+
+        if(l1 == null || l2 == null)return false;
+
+        int len1 = findLength(l1);
+        int len2 = findLength(l2);
+        ListNode tail1 = l1, tail2 = l2;
+
+        while(tail1.next != null){
+            tail1 = tail1.next;
+        }
+
+        while(tail2.next != null){
+            tail2 = tail2.next;
+        }
+
+        if(tail1 != tail2)return false;
+
+        if(len1 > len2){
+            int diff = len1 - len2;
+            while(diff != 0){
+                l1 = l1.next;
+                diff--;
+            }
+        }else{
+            int diff = len2 - len1;
+            while(diff != 0){
+                l2 = l2.next;
+                diff--;
+            }
+        }
+
+        while(l1 != null && l2 != null){
+            if(l1 == l2)return true;
+            l1 = l1.next;
+            l2 = l2.next;
+        }
+
+        return false;
+    }
+
+    public static int findLength(ListNode head){
+            int len = 0;
+            if(head == null)return 0;
+            while(head != null){
+                len++;
+                head = head.next;
+            }
+            return len;
     }
 
     public static void printList(ListNode root){
@@ -82,13 +156,23 @@ public class CTCI02_LINKEDLIST {
 
         System.out.println("\nAdding two list");
 
-        ListNode l1 = new ListNode(7);l1.next = new ListNode(1); l1.next.next = new ListNode(6);
+        ListNode l1 = new ListNode(7);l1.next = new ListNode(1); l1.next.next = new ListNode(6);l1.next.next.next = new ListNode(10);
         ListNode l2 = new ListNode(5);l2.next = new ListNode(9); l2.next.next = new ListNode(2);
 
         ListNode finalSum = addition(l1, l2);
         System.out.println("\n Addition : ");
         printList(finalSum);
         //System.out.println("Module " + 12/10);
+
+
+        System.out.print("\nReverse List: ");
+        ListNode reversedList = reverseList(l1);
+        printList(reversedList);
+
+
+        ListNode inter1 = new ListNode(1); inter1.next = new ListNode(2); inter1.next.next = new ListNode(3); inter1.next.next.next = new ListNode(4);
+        ListNode inter2 = new ListNode(5); inter2.next = new ListNode(6); inter2.next.next = new ListNode(2); 
+        System.out.print("\n\n Find Intersection: " + findIntersection(inter1, inter2));
     }
 
 }
