@@ -1,3 +1,4 @@
+target/
 target/classes/com/practice/leetcode/leetcode_practice/LC1469_LonelyNode$TreeNode.class
 target/classes/com/practice/leetcode/leetcode_practice/LC1469_LonelyNode.class
 target/classes/com/practice/leetcode/leetcode_practice/LC1022_SumRootToLeaf$TreeNode.class
@@ -23,3 +24,7 @@ target/classes/com/practice/leetcode/leetcode_practice/CTCI04_TREES_GRAPHS.class
 target/classes/com/practice/leetcode/leetcode_practice/CTCI03_STACK_QUEUES.class
 target/classes/com/practice/leetcode/leetcode_practice/CTCI02_LINKEDLIST$ListNode.class
 target/classes/com/practice/leetcode/leetcode_practice/CTCI02_LINKEDLIST.class
+target/classes/com/practice/leetcode/leetcode_practice/LC0637_AvgOfLevels.class
+target/classes/com/practice/leetcode/leetcode_practice/LC0637_AvgOfLevels$TreeNode.class
+target/classes/com/practice/leetcode/leetcode_practice/LC0669_TrimTree.class
+target/classes/com/practice/leetcode/leetcode_practice/LC0669_TrimTree$TreeNode.class
