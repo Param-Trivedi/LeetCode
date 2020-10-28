@@ -1,0 +1,237 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Java",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ]
+        },
+        {
+            "name": "Java Console App",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ],
+            "externalConsole": true
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-App<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.App",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CTCI02_LINKEDLIST<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.CTCI02_LINKEDLIST",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CTCI03_STACK_QUEUES<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.CTCI03_STACK_QUEUES",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CTCI04_TREES_GRAPHS<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.CTCI04_TREES_GRAPHS",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LC0014_LongestCommonPrefix<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.LC0014_LongestCommonPrefix",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LC0067_AddBinary<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.LC0067_AddBinary",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LC0206_ReverseLinkedList<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.LC0206_ReverseLinkedList",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LC0559_MacDepthNaryTree<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.LC0559_MacDepthNaryTree",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LC0590_NaryPostOrder<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.LC0590_NaryPostOrder",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LC0617_MergeBinaryTrees<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.LC0617_MergeBinaryTrees",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LC0637_AvgOfLevels<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.LC0637_AvgOfLevels",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LC0680_ValidPalindrome2<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.LC0680_ValidPalindrome2",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LC0819_MostFrequentWord<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.LC0819_MostFrequentWord",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LC0859_BuddyString<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.LC0859_BuddyString",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LC0872_LeafSimilarTree<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.LC0872_LeafSimilarTree",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LC0876_LinkedListMiddle<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.LC0876_LinkedListMiddle",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LC0938_RangeSumBST<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.LC0938_RangeSumBST",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LC1290_LinkListBinaryToNumber<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.LC1290_LinkListBinaryToNumber",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LC1469_LonelyNode<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.LC1469_LonelyNode",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LC1470_ShuffleArray<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.LC1470_ShuffleArray",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LC1480_RunningSum1D<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.LC1480_RunningSum1D",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LC1512_NoOfGoodPairs<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.LC1512_NoOfGoodPairs",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LC1528_ShufflingString<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.LC1528_ShufflingString",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LC1614_MaxNestingOfParenthesis<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.LC1614_MaxNestingOfParenthesis",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PR01_JavaTipsAndTricks<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.PR01_JavaTipsAndTricks",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PR02_DataStructures_LinkedList<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.PR02_DataStructures_LinkedList",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PR03_DataStructures_Trees<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.PR03_DataStructures_Trees",
+            "projectName": "leetcode-practice"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PR04_TreePractice<leetcode-practice>",
+            "request": "launch",
+            "mainClass": "com.practice.leetcode.leetcode_practice.PR04_TreePractice",
+            "projectName": "leetcode-practice"
+        }
+    ]
+}
